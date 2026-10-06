@@ -1,0 +1,2369 @@
+{
+  "header": {
+    "gtfsRealtimeVersion": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1790720570"
+  },
+  "entity": [
+    {
+      "id": "100555H0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100555H0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70856,
+          "longitude": 139.8044
+        },
+        "currentStopSequence": 13,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100555H0"
+        }
+      }
+    },
+    {
+      "id": "100557H0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100557H0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.67561,
+          "longitude": 139.77197
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100557H0"
+        }
+      }
+    },
+    {
+      "id": "100607K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100607K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69749,
+          "longitude": 139.78635
+        },
+        "currentStopSequence": 10,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100607K0"
+        }
+      }
+    },
+    {
+      "id": "100613TB",
+      "vehicle": {
+        "trip": {
+          "tripId": "100613TB",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70892,
+          "longitude": 139.79654
+        },
+        "currentStopSequence": 18,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100613TB"
+        }
+      }
+    },
+    {
+      "id": "100641H0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100641H0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.66539,
+          "longitude": 139.75934
+        },
+        "currentStopSequence": 4,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100641H0"
+        }
+      }
+    },
+    {
+      "id": "100659H0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100659H0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.64675,
+          "longitude": 139.74689
+        },
+        "currentStopSequence": 2,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100659H0"
+        }
+      }
+    },
+    {
+      "id": "100679K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100679K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68634,
+          "longitude": 139.78229
+        },
+        "currentStopSequence": 14,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100679K0"
+        }
+      }
+    },
+    {
+      "id": "100709K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100709K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.58705,
+          "longitude": 139.70609
+        },
+        "currentStopSequence": 1,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100709K0"
+        }
+      }
+    },
+    {
+      "id": "100711TA",
+      "vehicle": {
+        "trip": {
+          "tripId": "100711TA",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65687,
+          "longitude": 139.75468
+        },
+        "currentStopSequence": 9,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100711TA"
+        }
+      }
+    },
+    {
+      "id": "100719T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "100719T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.61442,
+          "longitude": 139.71632
+        },
+        "currentStopSequence": 4,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100719T0"
+        }
+      }
+    },
+    {
+      "id": "100729TA",
+      "vehicle": {
+        "trip": {
+          "tripId": "100729TA",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.63175,
+          "longitude": 139.73038
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100729TA"
+        }
+      }
+    },
+    {
+      "id": "100731TA",
+      "vehicle": {
+        "trip": {
+          "tripId": "100731TA",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.60527,
+          "longitude": 139.71364
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "100731TA"
+        }
+      }
+    },
+    {
+      "id": "110528N0",
+      "vehicle": {
+        "trip": {
+          "tripId": "110528N0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.59677,
+          "longitude": 139.71188
+        },
+        "currentStopSequence": 19,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110528N0"
+        }
+      }
+    },
+    {
+      "id": "110602T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "110602T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69212,
+          "longitude": 139.7849
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110602T0"
+        }
+      }
+    },
+    {
+      "id": "110608T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "110608T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69749,
+          "longitude": 139.78635
+        },
+        "currentStopSequence": 5,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110608T0"
+        }
+      }
+    },
+    {
+      "id": "110620HB",
+      "vehicle": {
+        "trip": {
+          "tripId": "110620HB",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.67561,
+          "longitude": 139.77197
+        },
+        "currentStopSequence": 9,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110620HB"
+        }
+      }
+    },
+    {
+      "id": "110622N0",
+      "vehicle": {
+        "trip": {
+          "tripId": "110622N0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65687,
+          "longitude": 139.75468
+        },
+        "currentStopSequence": 12,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110622N0"
+        }
+      }
+    },
+    {
+      "id": "110630N0",
+      "vehicle": {
+        "trip": {
+          "tripId": "110630N0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70892,
+          "longitude": 139.79654
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110630N0"
+        }
+      }
+    },
+    {
+      "id": "110680K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "110680K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.63872,
+          "longitude": 139.73999
+        },
+        "currentStopSequence": 14,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110680K0"
+        }
+      }
+    },
+    {
+      "id": "110724T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "110724T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.62688,
+          "longitude": 139.72395
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720549",
+        "vehicle": {
+          "id": "110724T0"
+        }
+      }
+    },
+    {
+      "id": "200533G0",
+      "vehicle": {
+        "trip": {
+          "tripId": "200533G0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.72168,
+          "longitude": 139.75214
+        },
+        "currentStopSequence": 13,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "200533G0"
+        }
+      }
+    },
+    {
+      "id": "200623T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "200623T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68409,
+          "longitude": 139.7628
+        },
+        "currentStopSequence": 9,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "200623T0"
+        }
+      }
+    },
+    {
+      "id": "200631T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "200631T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74357,
+          "longitude": 139.7287
+        },
+        "currentStopSequence": 16,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "200631T0"
+        }
+      }
+    },
+    {
+      "id": "200635T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "200635T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.77608,
+          "longitude": 139.6951
+        },
+        "currentStopSequence": 19,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "200635T0"
+        }
+      }
+    },
+    {
+      "id": "200637T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "200637T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.79029,
+          "longitude": 139.65405
+        },
+        "currentStopSequence": 26,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "200637T0"
+        }
+      }
+    },
+    {
+      "id": "200639T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "200639T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.64865,
+          "longitude": 139.749
+        },
+        "currentStopSequence": 4,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "200639T0"
+        }
+      }
+    },
+    {
+      "id": "200641K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "200641K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.66934,
+          "longitude": 139.75533
+        },
+        "currentStopSequence": 7,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "200641K0"
+        }
+      }
+    },
+    {
+      "id": "210620T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210620T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69533,
+          "longitude": 139.75821
+        },
+        "currentStopSequence": 18,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210620T0"
+        }
+      }
+    },
+    {
+      "id": "210624K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210624K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.67658,
+          "longitude": 139.76027
+        },
+        "currentStopSequence": 20,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210624K0"
+        }
+      }
+    },
+    {
+      "id": "210656T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210656T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65419,
+          "longitude": 139.74985
+        },
+        "currentStopSequence": 23,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210656T0"
+        }
+      }
+    },
+    {
+      "id": "210658T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210658T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70953,
+          "longitude": 139.7533
+        },
+        "currentStopSequence": 16,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210658T0"
+        }
+      }
+    },
+    {
+      "id": "210660T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210660T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73379,
+          "longitude": 139.73814
+        },
+        "currentStopSequence": 13,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210660T0"
+        }
+      }
+    },
+    {
+      "id": "210704K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210704K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74357,
+          "longitude": 139.7287
+        },
+        "currentStopSequence": 12,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210704K0"
+        }
+      }
+    },
+    {
+      "id": "210706K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210706K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.78891,
+          "longitude": 139.66136
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210706K0"
+        }
+      }
+    },
+    {
+      "id": "210726K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210726K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.76857,
+          "longitude": 139.70241
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210726K0"
+        }
+      }
+    },
+    {
+      "id": "210740T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210740T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.77747,
+          "longitude": 139.68575
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210740T0"
+        }
+      }
+    },
+    {
+      "id": "210762T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210762T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.75137,
+          "longitude": 139.71011
+        },
+        "currentStopSequence": 10,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210762T0"
+        }
+      }
+    },
+    {
+      "id": "210764T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210764T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.78426,
+          "longitude": 139.67896
+        },
+        "currentStopSequence": 5,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210764T0"
+        }
+      }
+    },
+    {
+      "id": "210766T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "210766T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.79196,
+          "longitude": 139.64542
+        },
+        "currentStopSequence": 1,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720550",
+        "vehicle": {
+          "id": "210766T0"
+        }
+      }
+    },
+    {
+      "id": "300568K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "300568K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68975,
+          "longitude": 139.8347
+        },
+        "currentStopSequence": 15,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "300568K0"
+        }
+      }
+    },
+    {
+      "id": "300612T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "300612T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6884,
+          "longitude": 139.80606
+        },
+        "currentStopSequence": 12,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "300612T0"
+        }
+      }
+    },
+    {
+      "id": "300652T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "300652T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68599,
+          "longitude": 139.88258
+        },
+        "currentStopSequence": 18,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "300652T0"
+        }
+      }
+    },
+    {
+      "id": "300664K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "300664K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69561,
+          "longitude": 139.77512
+        },
+        "currentStopSequence": 8,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "300664K0"
+        }
+      }
+    },
+    {
+      "id": "300672K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "300672K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6924,
+          "longitude": 139.72232
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "300672K0"
+        }
+      }
+    },
+    {
+      "id": "300688K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "300688K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69555,
+          "longitude": 139.75174
+        },
+        "currentStopSequence": 5,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "300688K0"
+        }
+      }
+    },
+    {
+      "id": "300726T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "300726T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70602,
+          "longitude": 139.9038
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "300726T0"
+        }
+      }
+    },
+    {
+      "id": "310601T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310601T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6886,
+          "longitude": 139.78772
+        },
+        "currentStopSequence": 12,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310601T0"
+        }
+      }
+    },
+    {
+      "id": "310605T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310605T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69102,
+          "longitude": 139.70679
+        },
+        "currentStopSequence": 20,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310605T0"
+        }
+      }
+    },
+    {
+      "id": "310619T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310619T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69597,
+          "longitude": 139.75798
+        },
+        "currentStopSequence": 16,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310619T0"
+        }
+      }
+    },
+    {
+      "id": "310621T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310621T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6884,
+          "longitude": 139.80606
+        },
+        "currentStopSequence": 10,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310621T0"
+        }
+      }
+    },
+    {
+      "id": "310703T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310703T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68975,
+          "longitude": 139.8347
+        },
+        "currentStopSequence": 7,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310703T0"
+        }
+      }
+    },
+    {
+      "id": "310711T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310711T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69351,
+          "longitude": 139.8977
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310711T0"
+        }
+      }
+    },
+    {
+      "id": "310723T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310723T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68376,
+          "longitude": 139.86395
+        },
+        "currentStopSequence": 5,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310723T0"
+        }
+      }
+    },
+    {
+      "id": "310725T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310725T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70602,
+          "longitude": 139.9038
+        },
+        "currentStopSequence": 2,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310725T0"
+        }
+      }
+    },
+    {
+      "id": "310731T0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310731T0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68939,
+          "longitude": 139.82623
+        },
+        "currentStopSequence": 2,
+        "currentStatus": "IN_TRANSIT_TO",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310731T0"
+        }
+      }
+    },
+    {
+      "id": "310781K0",
+      "vehicle": {
+        "trip": {
+          "tripId": "310781K0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.72282,
+          "longitude": 139.9266
+        },
+        "currentStopSequence": 1,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720547",
+        "vehicle": {
+          "id": "310781K0"
+        }
+      }
+    },
+    {
+      "id": "400610B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400610B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74171,
+          "longitude": 139.64912
+        },
+        "currentStopSequence": 37,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400610B0"
+        }
+      }
+    },
+    {
+      "id": "400611B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400611B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.72344,
+          "longitude": 139.6834
+        },
+        "currentStopSequence": 34,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400611B0"
+        }
+      }
+    },
+    {
+      "id": "400612B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400612B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69789,
+          "longitude": 139.6829
+        },
+        "currentStopSequence": 17,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400612B0"
+        }
+      }
+    },
+    {
+      "id": "400613B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400613B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69061,
+          "longitude": 139.69267
+        },
+        "currentStopSequence": 29,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400613B0"
+        }
+      }
+    },
+    {
+      "id": "400614B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400614B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6835,
+          "longitude": 139.7016
+        },
+        "currentStopSequence": 13,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400614B0"
+        }
+      }
+    },
+    {
+      "id": "400615B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400615B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65498,
+          "longitude": 139.74399
+        },
+        "currentStopSequence": 22,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400615B0"
+        }
+      }
+    },
+    {
+      "id": "400618B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400618B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.66376,
+          "longitude": 139.7839
+        },
+        "currentStopSequence": 17,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400618B0"
+        }
+      }
+    },
+    {
+      "id": "400619B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400619B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68236,
+          "longitude": 139.79877
+        },
+        "currentStopSequence": 15,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400619B0"
+        }
+      }
+    },
+    {
+      "id": "400636B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400636B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73258,
+          "longitude": 139.6705
+        },
+        "currentStopSequence": 21,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400636B0"
+        }
+      }
+    },
+    {
+      "id": "400637B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400637B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.67307,
+          "longitude": 139.72392
+        },
+        "currentStopSequence": 25,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400637B0"
+        }
+      }
+    },
+    {
+      "id": "400641B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400641B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.66492,
+          "longitude": 139.76694
+        },
+        "currentStopSequence": 19,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400641B0"
+        }
+      }
+    },
+    {
+      "id": "400644B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400644B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70559,
+          "longitude": 139.79224
+        },
+        "currentStopSequence": 12,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400644B0"
+        }
+      }
+    },
+    {
+      "id": "400716B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400716B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65667,
+          "longitude": 139.7557
+        },
+        "currentStopSequence": 7,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400716B0"
+        }
+      }
+    },
+    {
+      "id": "400717B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400717B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65893,
+          "longitude": 139.77715
+        },
+        "currentStopSequence": 4,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400717B0"
+        }
+      }
+    },
+    {
+      "id": "400722B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400722B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70849,
+          "longitude": 139.75249
+        },
+        "currentStopSequence": 8,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400722B0"
+        }
+      }
+    },
+    {
+      "id": "400723B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400723B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6995,
+          "longitude": 139.72504
+        },
+        "currentStopSequence": 5,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400723B0"
+        }
+      }
+    },
+    {
+      "id": "400724B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400724B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69337,
+          "longitude": 139.69913
+        },
+        "currentStopSequence": 2,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400724B0"
+        }
+      }
+    },
+    {
+      "id": "400740B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400740B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.66411,
+          "longitude": 139.73135
+        },
+        "currentStopSequence": 10,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400740B0"
+        }
+      }
+    },
+    {
+      "id": "400742B0",
+      "vehicle": {
+        "trip": {
+          "tripId": "400742B0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.67277,
+          "longitude": 139.79512
+        },
+        "currentStopSequence": 2,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "400742B0"
+        }
+      }
+    },
+    {
+      "id": "410601A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410601A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65498,
+          "longitude": 139.74399
+        },
+        "currentStopSequence": 18,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410601A0"
+        }
+      }
+    },
+    {
+      "id": "410602A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410602A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.67307,
+          "longitude": 139.72392
+        },
+        "currentStopSequence": 15,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410602A0"
+        }
+      }
+    },
+    {
+      "id": "410603A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410603A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6835,
+          "longitude": 139.7016
+        },
+        "currentStopSequence": 13,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410603A0"
+        }
+      }
+    },
+    {
+      "id": "410604A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410604A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68989,
+          "longitude": 139.68454
+        },
+        "currentStopSequence": 10,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410604A0"
+        }
+      }
+    },
+    {
+      "id": "410626A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410626A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69796,
+          "longitude": 139.70743
+        },
+        "currentStopSequence": 13,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410626A0"
+        }
+      }
+    },
+    {
+      "id": "410629A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410629A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.68236,
+          "longitude": 139.79877
+        },
+        "currentStopSequence": 25,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410629A0"
+        }
+      }
+    },
+    {
+      "id": "410631A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410631A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.65893,
+          "longitude": 139.77715
+        },
+        "currentStopSequence": 22,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410631A0"
+        }
+      }
+    },
+    {
+      "id": "410633A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410633A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70559,
+          "longitude": 139.79224
+        },
+        "currentStopSequence": 28,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410633A0"
+        }
+      }
+    },
+    {
+      "id": "410648A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410648A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69337,
+          "longitude": 139.69913
+        },
+        "currentStopSequence": 38,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410648A0"
+        }
+      }
+    },
+    {
+      "id": "410649A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410649A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.6995,
+          "longitude": 139.72504
+        },
+        "currentStopSequence": 35,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410649A0"
+        }
+      }
+    },
+    {
+      "id": "410650A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410650A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70849,
+          "longitude": 139.75249
+        },
+        "currentStopSequence": 32,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410650A0"
+        }
+      }
+    },
+    {
+      "id": "410652A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410652A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.66319,
+          "longitude": 139.76022
+        },
+        "currentStopSequence": 20,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410652A0"
+        }
+      }
+    },
+    {
+      "id": "410705A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410705A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70716,
+          "longitude": 139.6831
+        },
+        "currentStopSequence": 8,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410705A0"
+        }
+      }
+    },
+    {
+      "id": "410706A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410706A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73741,
+          "longitude": 139.65475
+        },
+        "currentStopSequence": 4,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410706A0"
+        }
+      }
+    },
+    {
+      "id": "410707A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410707A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.75141,
+          "longitude": 139.6403
+        },
+        "currentStopSequence": 2,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410707A0"
+        }
+      }
+    },
+    {
+      "id": "410727A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410727A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70295,
+          "longitude": 139.74525
+        },
+        "currentStopSequence": 9,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410727A0"
+        }
+      }
+    },
+    {
+      "id": "410728A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410728A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.70795,
+          "longitude": 139.77335
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410728A0"
+        }
+      }
+    },
+    {
+      "id": "410735A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410735A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.72344,
+          "longitude": 139.6834
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410735A0"
+        }
+      }
+    },
+    {
+      "id": "410743A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410743A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.75853,
+          "longitude": 139.6289
+        },
+        "currentStopSequence": 1,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410743A0"
+        }
+      }
+    },
+    {
+      "id": "410751A0",
+      "vehicle": {
+        "trip": {
+          "tripId": "410751A0",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.69681,
+          "longitude": 139.79747
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720548",
+        "vehicle": {
+          "id": "410751A0"
+        }
+      }
+    },
+    {
+      "id": "60024800",
+      "vehicle": {
+        "trip": {
+          "tripId": "60024800",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.72057,
+          "longitude": 139.71516
+        },
+        "currentStopSequence": 27,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60024800"
+        }
+      }
+    },
+    {
+      "id": "60030500",
+      "vehicle": {
+        "trip": {
+          "tripId": "60030500",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74107,
+          "longitude": 139.73035
+        },
+        "currentStopSequence": 20,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60030500"
+        }
+      }
+    },
+    {
+      "id": "60035100",
+      "vehicle": {
+        "trip": {
+          "tripId": "60035100",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.75086,
+          "longitude": 139.74219
+        },
+        "currentStopSequence": 15,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60035100"
+        }
+      }
+    },
+    {
+      "id": "60035900",
+      "vehicle": {
+        "trip": {
+          "tripId": "60035900",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74728,
+          "longitude": 139.73541
+        },
+        "currentStopSequence": 13,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60035900"
+        }
+      }
+    },
+    {
+      "id": "60039900",
+      "vehicle": {
+        "trip": {
+          "tripId": "60039900",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74981,
+          "longitude": 139.76619
+        },
+        "currentStopSequence": 10,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60039900"
+        }
+      }
+    },
+    {
+      "id": "60042700",
+      "vehicle": {
+        "trip": {
+          "tripId": "60042700",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74563,
+          "longitude": 139.77386
+        },
+        "currentStopSequence": 8,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60042700"
+        }
+      }
+    },
+    {
+      "id": "60045200",
+      "vehicle": {
+        "trip": {
+          "tripId": "60045200",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74278,
+          "longitude": 139.78088
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60045200"
+        }
+      }
+    },
+    {
+      "id": "60047900",
+      "vehicle": {
+        "trip": {
+          "tripId": "60047900",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73491,
+          "longitude": 139.78642
+        },
+        "currentStopSequence": 3,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60047900"
+        }
+      }
+    },
+    {
+      "id": "60103300",
+      "vehicle": {
+        "trip": {
+          "tripId": "60103300",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.75107,
+          "longitude": 139.74727
+        },
+        "currentStopSequence": 2,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60103300"
+        }
+      }
+    },
+    {
+      "id": "60523300",
+      "vehicle": {
+        "trip": {
+          "tripId": "60523300",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73568,
+          "longitude": 139.72768
+        },
+        "currentStopSequence": 22,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60523300"
+        }
+      }
+    },
+    {
+      "id": "60523500",
+      "vehicle": {
+        "trip": {
+          "tripId": "60523500",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.72878,
+          "longitude": 139.72476
+        },
+        "currentStopSequence": 19,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "60523500"
+        }
+      }
+    },
+    {
+      "id": "61023500",
+      "vehicle": {
+        "trip": {
+          "tripId": "61023500",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73377,
+          "longitude": 139.78883
+        },
+        "currentStopSequence": 29,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61023500"
+        }
+      }
+    },
+    {
+      "id": "61036800",
+      "vehicle": {
+        "trip": {
+          "tripId": "61036800",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74422,
+          "longitude": 139.73267
+        },
+        "currentStopSequence": 12,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61036800"
+        }
+      }
+    },
+    {
+      "id": "61040600",
+      "vehicle": {
+        "trip": {
+          "tripId": "61040600",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73491,
+          "longitude": 139.78642
+        },
+        "currentStopSequence": 11,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61040600"
+        }
+      }
+    },
+    {
+      "id": "61041200",
+      "vehicle": {
+        "trip": {
+          "tripId": "61041200",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.73568,
+          "longitude": 139.72768
+        },
+        "currentStopSequence": 9,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61041200"
+        }
+      }
+    },
+    {
+      "id": "61042900",
+      "vehicle": {
+        "trip": {
+          "tripId": "61042900",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.7254,
+          "longitude": 139.7204
+        },
+        "currentStopSequence": 6,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61042900"
+        }
+      }
+    },
+    {
+      "id": "61045600",
+      "vehicle": {
+        "trip": {
+          "tripId": "61045600",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.72057,
+          "longitude": 139.71516
+        },
+        "currentStopSequence": 4,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61045600"
+        }
+      }
+    },
+    {
+      "id": "61049000",
+      "vehicle": {
+        "trip": {
+          "tripId": "61049000",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.71176,
+          "longitude": 139.719
+        },
+        "currentStopSequence": 1,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61049000"
+        }
+      }
+    },
+    {
+      "id": "61269200",
+      "vehicle": {
+        "trip": {
+          "tripId": "61269200",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74981,
+          "longitude": 139.76619
+        },
+        "currentStopSequence": 7,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61269200"
+        }
+      }
+    },
+    {
+      "id": "61523200",
+      "vehicle": {
+        "trip": {
+          "tripId": "61523200",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74392,
+          "longitude": 139.77641
+        },
+        "currentStopSequence": 24,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61523200"
+        }
+      }
+    },
+    {
+      "id": "61523400",
+      "vehicle": {
+        "trip": {
+          "tripId": "61523400",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.75065,
+          "longitude": 139.75752
+        },
+        "currentStopSequence": 19,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61523400"
+        }
+      }
+    },
+    {
+      "id": "61523600",
+      "vehicle": {
+        "trip": {
+          "tripId": "61523600",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.75298,
+          "longitude": 139.73804
+        },
+        "currentStopSequence": 15,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61523600"
+        }
+      }
+    },
+    {
+      "id": "61523800",
+      "vehicle": {
+        "trip": {
+          "tripId": "61523800",
+          "startDate": "20260930",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        "position": {
+          "latitude": 35.74981,
+          "longitude": 139.76619
+        },
+        "currentStopSequence": 4,
+        "currentStatus": "STOPPED_AT",
+        "timestamp": "1790720553",
+        "vehicle": {
+          "id": "61523800"
+        }
+      }
+    }
+  ]
+}
