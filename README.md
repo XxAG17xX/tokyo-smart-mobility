@@ -12,7 +12,7 @@ All transport data comes from [ODPT](https://developer.odpt.org/) (Toei Bureau o
 | The feeds contain **no delay field** | any `toei_train_trip_update_*.json`, e.g. [30 Sep 07:22](api-samples/toei_train_trip_update_20260930-072259.json) | search the file for `"delay"`: no matches |
 | Train alerts feed was empty in all 3 runs | [`toei_train_alert_*.json`](api-samples) | `fetch_toei.py` |
 | At 07:22 on 30 Sep 2026, at least 192 of 650 buses (30%) were 3+ min late | [`bus_delays_20260930-072256.csv`](api-samples/bus_delays_20260930-072256.csv) (one row per bus) | `bus_delays.py api-samples/toei_bus_vehicle_20260930-072259.pb` |
-| Late buses cluster in the east (Kinshichō, Monzen-nakachō) | [static map](figures/fig_bus_map.png) · **[interactive map in kepler.gl](KEPLER_LINK)** | `bus_map.py`; [kepler map file](kepler/toei_bus_delays_20260930_0722.json) |
+| Late buses cluster in the east (Kinshichō, Monzen-nakachō) | [static map](figures/fig_bus_map.png) · **[interactive map in kepler.gl](https://kepler.gl/demo?mapUrl=https://raw.githubusercontent.com/XxAG17xX/tokyo-smart-mobility/main/kepler/toei_bus_delays_20260930_0722.json)** | `bus_map.py`; [kepler map file](kepler/toei_bus_delays_20260930_0722.json) |
 | ODPT as a city platform; the proposed loop | [`diagrams/`](diagrams) (draw.io files, open and edit in diagrams.net) | drawn in [diagrams.net](https://app.diagrams.net/) |
 
 ## Reproduce
