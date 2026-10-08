@@ -26,10 +26,6 @@ python bus_map.py api-samples/bus_delays_20260930-072256.csv     # map
 
 `bus_delays.py` compares each bus's live position with Toei's published timetable ([`ToeiBus-GTFS_20261006.zip`](api-samples/ToeiBus-GTFS_20261006.zip), version of 6 Oct 2026). Delays are **lower bounds**: each bus is compared with the stop it is heading to.
 
-## AI use
-
-The scripts, diagrams and map files were written with the help of Claude (Anthropic) and checked by us. See the AI declaration in the report.
-
 ## Credits
 
 Data: ODPT / Tokyo Metropolitan Bureau of Transportation, CC BY 4.0. Base map in `bus_map.py`: Esri, HERE, Garmin, © OpenStreetMap contributors.
