@@ -1,31 +1,46 @@
-# Tokyo smart mobility: evidence for our case study
+# Tokyo bus delays from open data: our evidence
 
-CS7NS4 Urban Computing, Trinity College Dublin, Assignment 1 (Tokyo). This repository holds the data, code and figures behind the **Mobility and Transport** section of our report, so every number in it can be checked.
+This is the evidence behind the **Mobility and Transport** part of our CS7NS4 Urban Computing case study on Tokyo (Trinity College Dublin, 2026). Every number the report gives about Toei buses and trains comes from a file in this repository, so you can open the file and check it yourself.
 
-All transport data comes from [ODPT](https://developer.odpt.org/) (Toei Bureau of Transportation, CC BY 4.0).
+All transport data is from [ODPT](https://developer.odpt.org/), Tokyo's public transport open data platform. It is published by the Tokyo Metropolitan Bureau of Transportation (Toei) under CC BY 4.0.
 
-## Claim → evidence
+## What we found, and where to check it
 
-| Claim in the report | Evidence | How it was made |
-|---|---|---|
-| Toei's live feeds need no key and update every 10–30 s; ~100 trains and ~600 buses in the morning rush | [`api-samples/`](api-samples) (raw `.pb` + readable `.json`, 3 runs) | `fetch_toei.py` |
-| The feeds contain **no delay field** | any `toei_train_trip_update_*.json`, e.g. [30 Sep 07:22](api-samples/toei_train_trip_update_20260930-072259.json) | search the file for `"delay"`: no matches |
-| Train alerts feed was empty in all 3 runs | [`toei_train_alert_*.json`](api-samples) | `fetch_toei.py` |
-| At 07:22 on 30 Sep 2026, at least 192 of 650 buses (30%) were 3+ min late | [`bus_delays_20260930-072256.csv`](api-samples/bus_delays_20260930-072256.csv) (one row per bus) | `bus_delays.py api-samples/toei_bus_vehicle_20260930-072259.pb` |
-| Late buses cluster in the east (Kinshichō, Monzen-nakachō) | [static map](figures/fig_bus_map.png) · **[interactive map in kepler.gl](https://kepler.gl/demo?mapUrl=https://raw.githubusercontent.com/XxAG17xX/tokyo-smart-mobility/main/kepler/toei_bus_delays_20260930_0722.json)** | `bus_map.py`; [kepler map file](kepler/toei_bus_delays_20260930_0722.json) |
-| ODPT as a city platform; the proposed loop | [`diagrams/`](diagrams) (draw.io files, open and edit in diagrams.net) | drawn in [diagrams.net](https://app.diagrams.net/) |
+| What the report says | Where to look |
+|---|---|
+| Toei's live feeds open without a key and update every 10 to 30 seconds. In the morning rush they showed about 100 trains and 560 to 650 buses. | The four snapshots in [`api-samples/`](api-samples) |
+| The feeds have **no delay field**, so nobody can see how late a bus is without working it out | Any `toei_train_trip_update_*.json`, for example [30 Sep, 07:22](api-samples/toei_train_trip_update_20260930-072259.json). The word "delay" appears nowhere. |
+| The train alerts feed was empty every time we looked | [`toei_train_alert_*.json`](api-samples) |
+| At 07:22 on 30 Sep 2026, at least 192 of 650 buses (30%) were 3 or more minutes late | [`bus_delays_20260930-072256.csv`](api-samples/bus_delays_20260930-072256.csv), one row per bus |
+| The late buses cluster in the east, around Kinshichō and Monzen-nakachō | [The map in kepler.gl][kepler] (opens in your browser, nothing to install) |
 
-## Reproduce
+## What each file is
 
-```bash
-pip install -r requirements.txt
-python fetch_toei.py                                            # live snapshot of the 4 Toei feeds
-python bus_delays.py api-samples/toei_bus_vehicle_20260930-072259.pb   # delays for a saved snapshot
-python bus_map.py api-samples/bus_delays_20260930-072256.csv     # map
-```
+**Scripts**
 
-`bus_delays.py` compares each bus's live position with Toei's published timetable ([`ToeiBus-GTFS_20261006.zip`](api-samples/ToeiBus-GTFS_20261006.zip), version of 6 Oct 2026). Delays are **lower bounds**: each bus is compared with the stop it is heading to.
+- [`fetch_toei.py`](fetch_toei.py) downloads Toei's four live feeds from ODPT: train positions, train trip updates, train alerts and bus positions. Each feed is saved twice: the raw file exactly as it arrived (`.pb`) and a readable copy (`.json`).
+- [`bus_delays.py`](bus_delays.py) works out how late each bus is. It takes a bus's live position, finds the stop it is heading to, and compares the time now with the time the timetable gives for that stop. These are **lower bounds**: a bus that is still short of the stop can only get later.
+- [`bus_map.py`](bus_map.py) drew our first, static map of the delays ([`api-samples/bus_map_20260930-072256.png`](api-samples/bus_map_20260930-072256.png)). The report uses the kepler.gl map instead.
+- [`requirements.txt`](requirements.txt) lists the three Python libraries the scripts use.
+
+**Data**
+
+- [`api-samples/`](api-samples) holds four snapshots of the live feeds, taken on 28 and 30 September 2026 between 07:05 and 07:23 Tokyo time. It also has the three `bus_delays_*.csv` files worked out from them, and [Toei's bus timetable](api-samples/ToeiBus-GTFS_20261006.zip) (GTFS, version of 6 October 2026) that the delays are measured against.
+- [`kepler/`](kepler) holds the map file: the 650 buses from 30 Sep 07:22, each with its delay band, plus the map's colours and zoom. The link in the table above loads this file into kepler.gl.
+
+**Diagrams and figures**
+
+- [`diagrams/`](diagrams) has the two diagrams from the report, drawn in draw.io. Both open in the browser, no account needed:
+  - [ODPT as a city platform][odpt]: what Tokyo's transport data platform does today, and the missing link back to traffic signals.
+  - [Our proposed loop][loop]: sense, analyse, actuate, feed back, for delay-aware bus priority.
+
+  `make_link.py` turns a `.drawio` file into a link like these, and the two `*_link.txt` files hold the links.
+- [`figures/`](figures) has the figures exactly as they appear in the report. The three charts were made in Microsoft Excel: open [`charts_tokyo.xlsx`](figures/charts_tokyo.xlsx) to see each chart next to its numbers. [`chart_data.json`](figures/chart_data.json) has the same numbers, counted from the report's tables, and [`excel_charts_tokyo.ps1`](figures/excel_charts_tokyo.ps1) is the script that drew them in Excel.
 
 ## Credits
 
-Data: ODPT / Tokyo Metropolitan Bureau of Transportation, CC BY 4.0. Base map in `bus_map.py`: Esri, HERE, Garmin, © OpenStreetMap contributors.
+Data: ODPT and the Tokyo Metropolitan Bureau of Transportation, CC BY 4.0. Base map of the kepler.gl map: © CARTO, © OpenStreetMap contributors. Base map of the static map: Esri, HERE, Garmin, © OpenStreetMap contributors.
+
+[kepler]: https://kepler.gl/demo?mapUrl=https://raw.githubusercontent.com/XxAG17xX/tokyo-smart-mobility/main/kepler/toei_bus_delays_20260930_0722.json
+[odpt]: https://app.diagrams.net/#R3VvbcuI4EP0aHkn5goE8cs3M7ORSQ6q25lHYwlYhW15ZTsI%2B7Ldvy5KNAWciCDAMc0mgJUumz3GrdVq03FH8tiAUtxwrYploueOW46A0vQkICjmKs5sECzC13EnLGkAv%2Bc8d6VZ4QwJ1DQtS0aZohXkmuztWgmKsmh7HT89gQJn8Af99IlbwK6VILBiPt0cv54jf7jhKo3sWYAqW4E2NZjuWpWYIVsrSLw0hL%2B%2FGXhtm5F99H3bZLScBzjY6CsaoIOmm0WdJgn2xYUOcs9fNbgtGN2dNUYh3DDMf0V3r3yQQkbbafWvd8AWTMNJT97q6IUZlZ23IIhSw15pp14%2BlNzlj4t3mtctHmNIaqnqeljPd%2F9rqY3KciHeG%2B%2BWILcdut%2BFlwSr4PUdJIDkExr1vRl7bBl6rG3hBNNdgaEeKVYkOZ3kSYHmZ3XKHiPuaQB14B08KHTHKeNHVnbpTb9oHeyY4W%2BJay9gae%2BMxtOj5MBf47V232Bq6gvOYxVhw%2BYDoC0qvVWxXb1%2Fr1OloY1Sjje1qI9J8DauhayBIN0%2B1uw7zagzvjurV3qQ7GTR5dTiyLGdctZQPj3MSPzuusaNvz%2BNoHYn%2FbPp2OqZuPZNXM5z8%2BV71PGOydg5z636epWj%2BTrTtUriR4RxehPLFIE0p8ZEgLCnbYOaquerPSwtKEF1luJh6KGdMyhxiAzDwrOwdiZiWoFESJvCa4oVskd6HielAmyGKBfLi4YIlQqNrd%2FT7Gojwt%2BdMjgOi622AaNsNIDZh2Dv5kyHxa47rW%2FjdF257hY9sBp%2FOBUfgIbmmbzeXFun0IgMr%2Fd79J2eqg%2BtNu92eUzepazOS%2BJIXLjjdukfSz45l39buS41aznQFjGlMBn5PLJWMaV6gthjzgMUr48tmulwBJp2uISbeWTBpXt62MJnhJGPc7AmGAWX4vQKkvFtDpLonWDLLzQ2qL4DVVueQLQ6MZBsEbJSqWTMzuO8YC6U8ADdsycVav%2FyJIsY%2BSJNeIyLwLEW%2BbH2FvfwmQbbzpuJPU950Oxi4g%2BkWVY6U9Fe5e7kGW94uJ%2FoNnOif%2FOkFjJyP8fzBcoGVmgJqBTdE9QG9EEFiDeY3xvMAJVcAp3vRcLofwzkCn%2BBM7PWI3pOEwAXPbLliMv8ZK1R9UKoCkoSFRMWxjzKRXQHE3kVD3PkY4sdcRni1jyGGEM9zKXyBEIpWWbX1iWUo382g%2ByKSw1ocp4wDk27PBPov1JltGpxwje%2BdmR5Gi3xc2yV9ao2HgdrI9w321b4PIItCck8COSvxMeyPDPkWoyRHVEUhzmCiolc5iGSTTPWttPggARJIvnflRxnJ0DP8CT86N5YKRHrPN0QZ8ZVlFCFKcRLiNkvo6tz8PEMa4TToMb3%2B8VLL%2FShjkBZqjL7NHh9kovf01Ywn7FVmrS%2FMR%2FOcIn6NULqOZ6jKeGeA0iAjvHuezszQkxmgQHMqo8KowI2l2RVA6HqXDKFrBmH7B0ZU5egmWKYsI3ITqaFMOQ6Irw2HqGwanx2VLWFlIiLzSoKh9mkosP15PPLsS%2BaRQap5NzQNBXOyxKqgzPEVINftXTJynsE%2B8K%2BBXIhBGEKUhblhEHAtZ52P6UhQVBUsxsNriOx997y4GmX3Salofyq1h1F287QJ8iOJHiTaSEiFticzepV1zZG%2FbLPFgqiEfJUJHMvWPKUMBcWhlnXyzV6KGxMRLmpmUHypxPqr0u%2Ba1PfGxNs74XYv03L6p%2FgAgxjk7c8ckUI4ZvsUUZ8ZJio6lKLRPXx2ptXAH%2FBjggoRCtQEv1Kk1F7tVvX6C5Nr1H%2B9nqFccPqKGhDAINsfFsrQ3ZPhOv%2BfJx8QFRq68hmwFBcsUJjkNsAq2KTCRMx4ovRDnmfRFarDlwW2wb5gqLK0gPlLQyFnzHwW6wf7y%2BT790epvvwcff%2F6cHeFWvBlAWqQoM8ERG1f52yf2rTLlwtw3DVI%2FL0zw2pWqPVFLnOwTOmcUHbL4BhxFSzXp5kPK976wkTULW%2FBjCkcyexQsgFq7oiqykH%2F%2FmlcrOK7hX26aAecvKiYrxeE42oHYn2sGm%2BlqBchIuyWLgKURdV8p0hALMuA7B3vvGTPUyhWSIAWFM6XH0ZpbO%2Bgh5NgIA%2FQw7s5ZKxLcCGYpoSWiO0gow97vX%2FkFwc7h%2B23XA93wHLu4%2B2sSiAeYrG5%2BdqFiYPUJcjL5hynWzawc4lOW%2B9N604rtczf7zT3Ep22Uaur%2B6082HEavxk93zrBJ1mmgj0lyfLAxzxEBsd8t2cyqi0VdXIoP4K0XdQiYe2aYV%2BflHJvOk2l7Vr0358CpsuAZMJMzwkl9oiFDJbXydq6XeB%2BVxKDE3qYDkHICYuFrWmxOox866MIG8zzxSeJV1wKbi3k%2F7JDykiizpbokZ%2Bkob7G9ZzNony5ntVZrEZdc7q6vSOcR4fMA%2B%2BwdFb4S%2BdzWicL8AumTNW1oaCCq%2Fr5WoktKuGKnEqIW2CVy%2BCs1FydPvyY4bTaacsJpO%2FhRLLT3f%2FwZJ029i69qtB1%2FC8W9KwGPc1qSL2dzpGifNHnnW%2BrlcxYfy9w82uJ0Fp%2BM1E16AuKbzgWlv8B
+[loop]: https://app.diagrams.net/#R7Zptc5s4EIB%2FDR%2BTwRAT5yN%2By3Xa9DKX3NzcR9nIRmMhUSFi%2B3797QqBweCaZJrWnTbJOGb1Lj27Wq1w%2FEmyWzFOHc%2BNZaYdf%2Bp4HknT64iRtSJJdi2oBpHjzxw3hFz4509sKjywqCiTKpnKjPArLmWKBTxXkIQWiVPKyf6KbInChhZ5Bp%2BpYlIxvT%2BuvGwi2d0rksYPMqIcJNGuqGowcN2i%2BmhfSEalYK3KzgwOgif2n%2B3EoMyWs4hmjYxaSq5Z2hQupRB0qRsyopTcNrOtJG%2B2mpI1bQmeloS3pf%2BwSMfH48KEPyhbx7bp25FNSEiZ2QqymERyWxO157GcTSWlPpl8mPIJ5by2qLYdx5u%2Fvmw1TEWFPlHd62rUTCOoWMUL4bmdTscLONQ%2FXkloBleNS2VSgi85jnnseP5wHgS3Xl0UrPH%2FXzQybU2RVrqFT87EBuncUoMoMk2v4eu9ovsqa8rokmKuZ7nZS8SCK0oizKBykV2XXYKBFr0qWrOLpvclCZruUB7rhINgAF8JZ2sB3zldYcoLVZoBOaEVa1CtYqQW68HIPk%2BqYfvwe%2BvNqvawDro7uSaDr3HT0kgqE6oVDtTWWK7pvqlj2xrYbgl2XIM6sDJilWld1dwXOMhjCenBkuMNrq6QDhi3sUHw9Gqi43xxkr5FucifiKaGDMpKU1fBsDiQYEupUuI73hhVnAksRWMmkEzNYFLIAqk%2FLtAH%2B7k3CSbzNvY%2BjHAIheSq6KJhmWA17q3jhziqSUcXcV6eKBh3F34DM08jmSs0xUQTx7vryz1MKxhbeBhvY6bpU0qWmLIFe99UB9iZeBfZmVZyQ7tSjnRhbn6OdObmO%2BnGzaCpHL7b1g7P71COwfDHaMeqWM1Mww6UvVFJMioyel5NBmhUn2afn2b99MPqE2cvBw9iRY35fmHAnvvn9PG5XQzMN9NMolJRWGxcHFwU2PDhwwCdnVYtVgrojmU6M8UisjfK4cqUiuKbwLo2uD1UA2En0VcyFxGNLN%2Bvw7%2BCuYX%2FXRj64SGldCu8I%2FD97wW%2B2wT%2FroP7YRf37jfn%2FhXkEkH4vg%2B7HrIbfg4%2F%2FduX3gj938p9QKuOVFAkqLC7Ge7srWKwGxjQa9uALXwWWfRm%2FLDwYbTU%2B9SoitldrJIvFUv1%2BzN7OwtmYRez44nretMWs34Hsz%2FSwbkNjow47pw%2FAcxLnRtP5BzMvoF58vx3%2BNwT5lRytjQAg1NKeN2rgjOhMIaStItlsVS6sJhLOGAaHteq0AHwg2HbMHa6rzE2cD8%2BPz4VVT48omaFH6puZb%2FN8SlzPAx%2BCnuM2%2FuCLDfnGb5BhuezGSIwDicfe3KcLzjLYnRf0TwbbI3Xje4El2vrIB8XK%2F2IQ%2FzCBWXrx25llTkt1ETspUDFIXnEcB9gvy1yD5wvxiD38qqLgFgZOnqbV80HLS2wrnDp4WYtSGoIUBGF2Dw8LrgElTKiOeNlhhYLNmLSZcKWuXqp2KuD4bXBqKrhZEH5GLR5bdjtMqPFAGjUip4dkQODBBdmSVvnDU3UmuqWM%2FcG0hQYBI3z24j9dWADdfsTmFrj3ZUZUsnMLmiTk90jCg4Aj0bDZtDkphkYM5wVlZZPtd69o8XlXouy4qTViE5w41cc2zpBibK2s%2FQLviWPJ2zTa3msqnk3HhuniAaRB4%2Fs4okMBpdCpN8isrbvrmFCICw6%2F0VNX8PHr6NW95wujrVBcKms3bRYExigxwkhERPrzFy5AEot47eNqY6psg6cu5Vqg%2BebX9IANt32OpbVVn3xTL7vjtzLawTlluqt7mJZ%2BNzBKSwbgUj%2Bl5xEKk%2BLq2DK2a4Z0P%2FKQepegsMvEgNFWJ3Fq2M4Hs%2BfH%2B4xYAugmatfxqVu1%2FNBRHlmJjSsyl9l%2B0zTxBwqRGQ6e1wsXJKIJhAENsXg4oRCaDaiZn0pjp50n84m4Df%2FB0gW5eCqmKqsHtstD2VHWgyXril%2BFVL3uMHIancOxwcxfz6cj7p0fepOh9NphzIfXQ9m0CzYpU%2FmaQp29DuFxG6bJ7CgK55wd3HxBEvdOZ14rMPZAL%2FgRObmgs%2BZ3Tkj3xlP4crM6M9HJrKYLWNnMnRG0%2FKO4UEKYOxKkA05JN0VmCUUXqNA0ILrm4Z3jeGMiUzS4nWJIkKQAAqxuRtcSSO2sYqVxn0HqyNrAl3QlROeMG5ccniPAQDjZd%2BvfxN97ha7C2jf%2B1FAmzwn3t8ot6LDmzLN93QgtXxVp0iwBcwrP0byPw%3D%3D
