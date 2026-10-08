@@ -27,13 +27,12 @@ try {
     $ws.Cells.Item($i + 2, 1) = $data.sources.cats[$i]
     for ($j = 0; $j -lt $data.sources.series.Count; $j++) { $v = $data.sources.series[$j].values[$i]; if ($v -gt 0) { $ws.Cells.Item($i + 2, $j + 2) = $v } }
   }
-  $ch = New-Chart $ws 58 "A1:D$($data.sources.cats.Count + 1)" "" 1520 720
-  $ch.Axes(1).ReversePlotOrder = $true; $ch.Axes(1).Crosses = 2
+  # clustered columns (not stacked bars) so it reads differently from the initiatives chart; red = real-time
+  $ch = New-Chart $ws 51 "A1:D$($data.sources.cats.Count + 1)" "" 1520 720
   $ch.Legend.Position = -4107
-  $colors = @($NAVY, $LIGHTBLUE, $LIGHTGREY)
+  $colors = @($BLUE, $NAVY, $LIGHTGREY)
   for ($j = 1; $j -le 3; $j++) { $ch.SeriesCollection($j).Format.Fill.ForeColor.RGB = $colors[$j - 1]; $ch.SeriesCollection($j).HasDataLabels = $true }
-  $ch.SeriesCollection(1).DataLabels().Format.TextFrame2.TextRange.Font.Fill.ForeColor.RGB = 16777215
-  $ch.ChartGroups(1).GapWidth = 60
+  $ch.ChartGroups(1).GapWidth = 70; $ch.ChartGroups(1).Overlap = 0
   $ch.Axes(2).HasTitle = $true; $ch.Axes(2).AxisTitle.Text = "Number of open data sources"
   $null = $ch.Export("$dir\fig_sources_excel_tokyo.png")
 
